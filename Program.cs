@@ -1,45 +1,24 @@
 ﻿using System;
 
-namespace _22_10_21_1_
+namespace _22_10_21_2_
 {
     class Program
     {
         static void Main(string[] args)
         {
-            /*Задание 1: Пользователь вводит целое число, преобразуйте значение номера дня недели в текстовое название. 
-            Если введенное значение не соответствует дню недели, выведите сообщение об ошибке.*/
-            Console.Write("Введите номер: ");
-            int dayNum = Convert.ToInt32(Console.ReadLine());
-
-            string dayName;
-            switch (dayNum)
-            {
-                case 1:
-                    dayName = "Понедельник";
-                    break;
-                case 2:
-                    dayName = "Вторник";
-                    break;
-                case 3:
-                    dayName = "Среда";
-                    break;
-                case 4:
-                    dayName = "Четверг";
-                    break;
-                case 5:
-                    dayName = "Пятница";
-                    break;
-                case 6:
-                    dayName = "Суббота";
-                    break;
-                case 7:
-                    dayName = "Воскресение";
-                    break;
-                default:
-                    dayName = "Ошибка: Дня с номером " + dayNum + " не существует";
-                    break;
-            }
-            Console.WriteLine(dayName);
+            //Задание 2: Даны три целых числа. Выбрать из них те, которые принадлежат интервалу [1,3].
+            Console.WriteLine("Введите 3 числа: ");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            int n3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Числа, которые принадлежат отрезку [1;3]:");
+            if (n1 >= 1 && n1 <= 3)
+                Console.Write(n1 + " ");
+            if (n2 >= 1 && n2 <= 3)
+                Console.Write(n2 + " ");
+            if (n3 >= 1 && n3 <= 3)
+                Console.Write(n3 + " ");
+            Console.WriteLine("");
         }
     }
 }
